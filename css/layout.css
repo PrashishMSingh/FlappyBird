@@ -1,0 +1,116 @@
+#game-canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.game-wrapper{
+    position: relative;
+    width: 350px;
+    height: 600px;
+    overflow: hidden;
+    margin: auto;
+    border:1px solid black;
+    margin-top: 40px;
+}
+
+.game-background{
+    position: absolute;
+}
+
+.bottom-background{
+    position: absolute;
+    bottom : 0px;
+    z-index: 10;
+}
+
+.game-background div, .bottom-background div, .gameStart, .gameOver, .gameStartBtn, .gamePodium{
+    background: url('./../images/flappy_sprite.png');
+    background-size: 1250px 1200px;
+}
+
+.game-background div, .bottom-background div{
+    margin-left: -1px;
+    float: left;
+    width: 350px;
+    
+}
+
+.bottom-background div{
+    height: 120px;
+    background-position: 500px 0;
+}
+
+.game-background div{
+    height: 600px;
+    background-position: 0 0;
+}
+
+
+
+.gameStart{
+    position: absolute;
+    height: 130px;
+    width : 145px;
+    top: 50%;
+    left: 30%;
+    background-position: 540px -200px;
+    display: none;
+}
+
+.gameOver{
+    position: absolute;
+    height: 150px;
+    width : 300px;
+    top: 25%;
+    left: 20px;
+    z-index: 9;
+    background-position: 10px 600px;
+    display: none;
+}
+
+.clear-fix:before, .clear-fix:after{
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.gameOver ul{
+    list-style: none;
+    float: right;
+    margin: 30px 50px 0 0 ;
+}
+
+.gameOver ul li{
+    display: block;
+    right: 20px;
+    line-height: 50px;
+    font-size: 20px;
+    color: #E57757;   
+    
+}
+
+.gameStartBtn, .gamePodium{
+    position: absolute;
+    height: 80px;
+    width : 150px;
+    top: 50%;    
+    display: none
+}
+
+.gameStartBtn{
+    background-position: -855px -270px;
+    left: 25px;
+}
+
+.gamePodium{
+    background-position: -1000px -270px;
+    right: 25px;
+}
+
+
+

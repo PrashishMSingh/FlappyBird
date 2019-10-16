@@ -29,7 +29,7 @@ class Pipe{
         this.pipeGapHeight = 100
         
         
-        this.nextPipeGap = 220;
+        this.nextPipeGap = 180;
                 
         this.bottomPipe = {
             dY: this.dY + this.dHeight + this.pipeGapHeight,

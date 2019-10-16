@@ -29,7 +29,8 @@ class Game{
         Object.keys(this.envState).map(key =>{
             this.envState[key] = 0
         })
-        this.envState.pipeList = []
+        this.envState.pipeList = [];
+        this.envState.velocity = 0.4;
     }
 
     setEnviroment = ()=>{
@@ -166,8 +167,7 @@ class Game{
     run = () =>{
         this.moveBackground()
         this.drawBackground()     
-        this.checkCollision()
-        
+        this.checkCollision()        
         if(this.hasStarted){
             this.startGameWrapper.style.display = 'none'
             this.envState.pipeList.map(pipe => {
